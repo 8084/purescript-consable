@@ -9,6 +9,7 @@ import Data.List as L
 import Data.List.Lazy as LL
 import Data.CatQueue as CQ
 import Data.CatList as CL
+import Data.Sequence as S
 
 class Consable t where
   cons :: forall a. a -> t a -> t a
@@ -28,3 +29,6 @@ instance consableCatQueue :: Consable CQ.CatQueue where
 
 instance consableCatList :: Consable CL.CatList where
   cons = CL.cons
+
+instance consableSeq :: Consable S.Seq where
+  cons = S.cons
