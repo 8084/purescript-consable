@@ -1,5 +1,10 @@
 {
   "name": "purescript-consable",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8084/purescript-consable.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
